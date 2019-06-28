@@ -173,8 +173,8 @@ open class WOWRibbonView: UIView {
         if !_setup {
             
             _setup = true
-            self._shape.lineCap = kCALineCapRound
-            self._shape.lineJoin = kCALineJoinRound
+            self._shape.lineCap = CAShapeLayerLineCap.round
+            self._shape.lineJoin = CAShapeLayerLineJoin.round
             self.layer.addSublayer(_shape)
             
             // label on top of layer
